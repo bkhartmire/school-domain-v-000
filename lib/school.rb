@@ -20,6 +20,6 @@ class School
   end
 
   def grade(grade)
-    roster.values_at.flatten(grade)
+    roster.values_at.(grade).flatten
   end
 end
