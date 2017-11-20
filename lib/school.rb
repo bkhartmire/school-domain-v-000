@@ -5,13 +5,13 @@ class School
   end
 
   attr_reader :name
-  
+
   ROSTER = {}
-  
+
   def roster
     ROSTER
   end
-  
+
   def add_student(name, grade)
     ROSTER[grade] = []
     ROSTER[grade] << name
@@ -19,7 +19,7 @@ class School
 
   def grade
   end
-  
+
   def sort
   end
 end
