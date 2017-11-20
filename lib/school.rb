@@ -17,6 +17,7 @@ class School
     names.map do |name|
       ROSTER[grade] << name
     end
+    ROSTER
   end
 
   def grade
