@@ -6,12 +6,9 @@ class School
 
   attr_reader :name
 
-  def roster
-    @roster = {}
-  end
+  attr_accessor :roster
 
   def add_student(names, grade)
-    roster
     @roster[grade] = []
     @roster[grade] << names
     @roster
