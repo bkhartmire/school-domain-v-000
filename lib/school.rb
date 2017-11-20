@@ -23,7 +23,7 @@ class School
     roster.values_at(grade).flatten(2)
   end
 
-  def sort(school)
+  def sort(school_name)
     roster[grade].sort
   end
 end
