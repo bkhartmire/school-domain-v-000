@@ -6,18 +6,14 @@ class School
 
   attr_reader :name
 
-  ROSTER = {}
-
   def roster
-    ROSTER
+    @roster = {}
   end
 
   def add_student(names, grade)
-    ROSTER[grade] = []
-    names.map do |name|
-      ROSTER[grade] << name
-    end
-    ROSTER
+    @roster[grade] = []
+    @roster[grade] << names
+    @roster
   end
 
   def grade
