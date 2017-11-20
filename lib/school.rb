@@ -12,9 +12,11 @@ class School
     ROSTER
   end
 
-  def add_student(name, grade)
+  def add_student(names, grade)
     ROSTER[grade] = []
-    ROSTER[grade] << name
+    names.each do |name|
+      ROSTER[grade] << name
+    end
   end
 
   def grade
