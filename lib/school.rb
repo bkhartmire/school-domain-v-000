@@ -19,4 +19,6 @@ class School
     roster
   end
 
+  def grade(grade)
+    roster[grade].values 
 end
