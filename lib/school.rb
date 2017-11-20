@@ -14,7 +14,7 @@ class School
 
   def add_student(names, grade)
     ROSTER[grade] = []
-    names.each do |name|
+    names.map do |name|
       ROSTER[grade] << name
     end
   end
