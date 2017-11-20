@@ -7,7 +7,7 @@ class School
 
   attr_reader :school_name
 
-  attr_accessor :roster, :grade, :name
+  attr_accessor :roster, :grade, :name, :sort
 
   def add_student(name, grade)
     if roster[grade] == nil
