@@ -7,12 +7,12 @@ class School
 
   attr_reader :school_name
 
-  attr_accessor :roster :grade :sort :name
+  attr_accessor :roster, :grade, :sort, :name
 
   def add_student(name, grade)
-    @roster[grade] = []
-    @roster[grade] << name
-    @roster
+    roster[grade] = []
+    roster[grade] << name
+    roster
   end
 
 end
